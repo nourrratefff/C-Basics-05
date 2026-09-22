@@ -35,7 +35,16 @@
             Console.WriteLine(pages);
             #endregion
 
+            #region
+            double[] prices2 = { 25.5, 40.0};
+            ApplyDiscount(prices2);
+
+            //prints 20.5 because arrays are a reference type variable
+            Console.WriteLine(prices2[0]);
+            #endregion
+
         }
+
 
 
         #region Question 3
@@ -66,6 +75,17 @@
             return pages + 50;
         }
 
-        #endregion 
+        #endregion
+
+        #region Question 6
+
+        static void ApplyDiscount(double[] prices2)
+        {
+            prices2[0] -= 5;
+        }
+
+        #endregion
+
+
     }
 }
