@@ -75,7 +75,11 @@
             #region Sheet 05: Question 2
 
             PrintBookInfo("Clean Code", 200);
-            #endregion 
+            #endregion
+
+            #region Sheet 05: Question 3
+            PrintBookInfo(pages6: 300, title2: "Clean code");
+            #endregion
 
 
         }
@@ -168,6 +172,8 @@
 
 
         #endregion
+
+
 
 
 
