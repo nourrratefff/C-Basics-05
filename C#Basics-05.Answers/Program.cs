@@ -35,12 +35,24 @@
             Console.WriteLine(pages);
             #endregion
 
-            #region
+            #region Question 6
             double[] prices2 = { 25.5, 40.0};
             ApplyDiscount(prices2);
 
             //prints 20.5 because arrays are a reference type variable
             Console.WriteLine(prices2[0]);
+            #endregion
+
+            #region Question 7
+
+            int pages3 = 400;
+
+            AddBonusPagesByRef(ref pages3);
+
+            // it's different from question 5 because here we're passing by ref
+            //which means the change ocurrs to the original variable rather than a copy
+            //as we're pointing to the same reference in memory
+            Console.WriteLine(pages3);
             #endregion
 
         }
@@ -82,6 +94,15 @@
         static void ApplyDiscount(double[] prices2)
         {
             prices2[0] -= 5;
+        }
+
+        #endregion
+
+        #region Question 7
+
+        static void AddBonusPagesByRef(ref int pages3)
+        {
+            pages3 += 50;
         }
 
         #endregion
