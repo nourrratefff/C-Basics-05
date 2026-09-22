@@ -55,6 +55,29 @@
             Console.WriteLine(pages3);
             #endregion
 
+            #region Question 8
+
+            ReplaceArray(ref prices);
+
+            Console.WriteLine(prices.Length);
+
+            #endregion
+
+            #region Sheet 05: Question 1
+
+            if(TryGetPrice("Clean Code", out double price5))
+            {
+                Console.WriteLine(price5);
+            }
+
+            #endregion
+
+            #region Sheet 05: Question 2
+
+            PrintBookInfo("Clean Code", 200);
+            #endregion 
+
+
         }
 
 
@@ -106,6 +129,46 @@
         }
 
         #endregion
+
+
+        #region Question 8
+
+        static void ReplaceArray(ref double[] prices4)
+        {
+            prices4[0] = 10.0; prices4[1] = 12.5; prices4[2] = 15.0; 
+
+        }
+        #endregion
+
+        #region Sheet 05: Question 1
+
+        static bool TryGetPrice(string title, out double price5)
+        {
+            if(title == "Clean Code")
+            {
+                price5 = 25.0;
+                return true;
+            }
+            else
+            {
+                price5 = 0;
+                return false;
+            }
+               
+        }
+
+        #endregion
+
+        #region Sheet 05: Question 2
+
+        static void PrintBookInfo(string title2, int pages6 = 300)
+        {
+            Console.WriteLine($"Book Title: {title2}   Pages: {pages6} ");
+        }
+
+
+        #endregion
+
 
 
     }
