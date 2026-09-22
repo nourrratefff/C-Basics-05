@@ -82,6 +82,10 @@
             #endregion
 
 
+
+            PrintAllTitles("Clean Code", "The pragmatic Programmer", "Refactoring");
+
+
         }
 
 
@@ -173,7 +177,16 @@
 
         #endregion
 
+        #region Sheet 05: Question 4
 
+        static void PrintAllTitles(params string[] titles)
+        {
+            foreach(string book in titles)
+            {
+                Console.WriteLine(book);
+            }
+        }
+        #endregion
 
 
 
