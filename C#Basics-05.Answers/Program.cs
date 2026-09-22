@@ -25,8 +25,15 @@
             PrintWelcomeMessage();
 
             PrintBookTitle("Clean Code");
+            #region Question 5
+            int pages = 400;
 
+            AddBonusPages(pages);
 
+            //Prints 400 because its passing by vakue which means a copy 
+            //of pages is altered not the main variable 
+            Console.WriteLine(pages);
+            #endregion
 
         }
 
@@ -51,5 +58,14 @@
         }
 
         #endregion
+
+        #region Question 5
+
+        static int AddBonusPages(int pages)
+        {
+            return pages + 50;
+        }
+
+        #endregion 
     }
 }
