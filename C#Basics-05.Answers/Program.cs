@@ -88,14 +88,26 @@ namespace C_Basics_05.Answers
 
             #region Sheet 05: Question 5
             Book book = new Book();
-            
+
 
             //it won't print because private access modifier is not 
             //accessible outside of class
             //Console.WriteLine(book.password);
             #endregion
 
+            #region Sheet 05: Question 6
 
+            //Doesnot compile because its inacessible
+            //Console.WriteLine(book.copiesInStock);
+
+            #endregion
+
+            #region Sheet 05: Question 7
+
+            book.Title = "Clean Code";
+            Console.WriteLine(book.Title);
+
+            #endregion
         }
 
 
