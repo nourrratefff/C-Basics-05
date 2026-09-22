@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="../Book.cs/BookLibrary.cs.csproj" />
   <Project Path="C#Basics-05.Answers/C#Basics-05.Answers.csproj" />
 </Solution>

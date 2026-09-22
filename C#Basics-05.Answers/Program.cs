@@ -1,4 +1,7 @@
-﻿namespace C_Basics_05.Answers
+﻿using BookLibrary;
+
+
+namespace C_Basics_05.Answers
 {
     public class Program
     {
@@ -81,9 +84,16 @@
             PrintBookInfo(pages6: 300, title2: "Clean code");
             #endregion
 
-
-
             PrintAllTitles("Clean Code", "The pragmatic Programmer", "Refactoring");
+
+            #region Sheet 05: Question 5
+            Book book = new Book();
+            
+
+            //it won't print because private access modifier is not 
+            //accessible outside of class
+            //Console.WriteLine(book.password);
+            #endregion
 
 
         }
@@ -187,6 +197,8 @@
             }
         }
         #endregion
+
+
 
 
 
